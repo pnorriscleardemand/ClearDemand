@@ -13,7 +13,8 @@
 
 <h5>Things I would do if I had more time.</h5>
 <ul>
-    <li>The UI is very basic. I did not spend any time making it look nice.</li>
+    <li>The UI is very basic. I did not spend any time making it look nice.</li>   
+    <li>Probably use a library such as MudBlazor.</li>
     <li>Unit tests.</li>
     <li>Logging and instrumentation. Logging is set up.</li>
     <li>Break down UI into more components for reuse.</li>
