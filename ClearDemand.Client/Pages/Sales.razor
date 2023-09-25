@@ -1,0 +1,25 @@
+﻿@page "/sales"
+
+<PageTitle>Sales</PageTitle>
+
+<h1>Sales</h1>
+
+<p>Please select a sale below.</p>
+
+@if (ViewModel == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <button
+        type="button"
+        class="btn btn-primary"
+        @onclick="AddSale">
+        Create Sale
+    </button>
+
+    <SaleListComponent Sales="ViewModel"></SaleListComponent>
+}

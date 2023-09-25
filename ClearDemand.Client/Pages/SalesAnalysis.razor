@@ -1,0 +1,19 @@
+﻿@page "/salesanalysis"
+@page "/salesanalysis/{Id}"
+
+<PageTitle>Markdown Plans</PageTitle>
+
+<h1>Markdown Plans</h1>
+
+<p>Please select a markdown plan below.</p>
+
+@if (ViewModel == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <DailySalesAnalysisListComponent DailySalesAnalysisList="ViewModel"></DailySalesAnalysisListComponent>
+}

@@ -1,0 +1,21 @@
+﻿<table class="table">
+    <thead>
+    <tr>
+        <th>Sale ID</th>
+        <th>Customer</th>
+        <th>Sale Date</th>
+        <th>Total Amount</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var sale in Sales)
+    {
+        <tr>
+            <td>@sale.SaleId</td>
+            <td>@sale.CustomerEmail</td>
+            <td>@sale.SaleDate</td>
+            <td>@sale.TotalAmount</td>
+        </tr>
+    }
+    </tbody>
+</table>

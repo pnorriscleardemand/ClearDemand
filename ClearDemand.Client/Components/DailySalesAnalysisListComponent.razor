@@ -1,0 +1,32 @@
+﻿<table class="table">
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>Product Name</th>
+        <th>Quantity Sold</th>
+        <th>Cost</th>
+        <th>Cost Subtotal</th>
+        <th>Sale Price</th>
+        <th>Subtotal</th>
+        <th>Margin</th>
+        <th>Profit</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var dailySalesAnalysis in DailySalesAnalysisList)
+    {
+        <tr>
+            <td>@dailySalesAnalysis.Date</td>
+            <td>@dailySalesAnalysis.ProductName</td>
+            <td>@dailySalesAnalysis.QuantitySold</td>
+            <td>@dailySalesAnalysis.Cost</td>
+            <td>@dailySalesAnalysis.CostSubtotal</td>
+            <td>@dailySalesAnalysis.SalePrice</td>
+
+            <td>@dailySalesAnalysis.Subtotal</td>
+            <td>@dailySalesAnalysis.Margin</td>
+            <td>@dailySalesAnalysis.Profit</td>
+        </tr>
+    }
+    </tbody>
+</table>

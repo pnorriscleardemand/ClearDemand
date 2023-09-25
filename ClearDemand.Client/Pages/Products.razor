@@ -1,0 +1,25 @@
+﻿@page "/products"
+
+<PageTitle>Products</PageTitle>
+
+<h1>Products</h1>
+
+<p>Please select a product below.</p>
+
+@if (ViewModel == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <button
+        type="button"
+        class="btn btn-primary"
+        @onclick="AddProduct">
+        Add Product
+    </button>
+
+    <ProductListComponent ProductList="ViewModel"></ProductListComponent>
+}

@@ -1,0 +1,189 @@
+﻿@page "/editmarkdownplan"
+@page "/editmarkdownplan/{Id}"
+
+<PageTitle>Markdown Plan</PageTitle>
+<h1>Markdown Plan</h1>
+
+@if (ViewModel == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <EditForm Model="@ViewModel" OnValidSubmit="@Submit">
+        <DataAnnotationsValidator/>
+        <ValidationSummary/>
+        <div class="card">
+            <div class="card-body">
+                <h2>Plan Details</h2>
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-sm">
+                            <label>
+                                Plan Name:
+                            </label>
+                        </div>
+                        <div class="col-sm">
+                            <InputText @bind-Value="ViewModel!.PlanName"/>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <label>
+                                Plan Description:
+                            </label>
+                        </div>
+                        <div class="col-sm">
+                            <InputText @bind-Value="ViewModel!.PlanDescription"/>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>&nbsp;</p>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h2>Markdown Schedule</h2>
+                <div class="container mt-5">
+                    <div class="row">
+                        <!-- First Column -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    Plan Start
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="startdate">Start Date</label>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input id="startdate" type="date" @bind="ViewModel!.StartDate"/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="startdate">Markdown %</label>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input id="startdate" type="number" @bind="ViewModel!.StartPercentage"/>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mid Column -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    Plan Middle
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="startdate">Mid Date</label>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input id="startdate" type="date" @bind="ViewModel!.MidDate"/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="startdate">Markdown %</label>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input id="startdate" type="number" @bind="ViewModel!.MidPercentage"/>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Plan End Column -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    Plan End
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="startdate">End Date</label>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input id="startdate" type="date" @bind="ViewModel!.EndDate"/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="startdate">Markdown %</label>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input id="startdate" type="number" @bind="ViewModel!.EndPercentage"/>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>&nbsp;</p>
+        </div>
+        <div class="card" hidden>
+            @* Detail UI. Not being used for this demo.*@
+            <div class="card-body">
+                <h2>Markdown Schedule</h2>
+                @foreach (var item in ViewModel.Markdowns)
+                {
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <label>
+                                    Phase Start Date:
+                                </label>
+                                <input type="text" @bind="item!.StartDate"/>
+                            </div>
+                            <div class="col-sm">
+                                <label>
+                                    Phase End Date:
+                                </label>
+                                <input type="text" @bind="item!.EndDate"/>
+                            </div>
+                            <div class="col-sm">
+                                <label>
+                                    Markdown Percentage:
+                                </label>
+                                <input type="text" @bind="item!.MarkdownPercentage"/>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div>
+            <p>&nbsp;</p>
+        </div>
+        <div>
+            <button type="button"
+                    class="btn btn-primary"
+                    @onclick="Submit">
+                Submit
+            </button>
+        </div>
+    </EditForm>
+}

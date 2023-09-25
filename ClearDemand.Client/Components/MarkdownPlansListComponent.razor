@@ -1,0 +1,29 @@
+﻿<table class="table">
+    <thead>
+    <tr>
+        <th>Plan ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var markdownPlan in MarkdownPlanList)
+    {
+        <tr>
+            <td>@markdownPlan.MarkdownPlanId</td>
+            <td>@markdownPlan.PlanName</td>
+            <td>@markdownPlan.PlanDescription</td>
+            <td>@markdownPlan.StartDate</td>
+            <td>@markdownPlan.EndDate</td>
+            <td>
+                <button type="button" class="btn btn-primary" @onclick="@(() => ViewMarkdownPlan(markdownPlan.MarkdownPlanId))">Edit</button>
+            </td>
+
+        </tr>
+    }
+    </tbody>
+</table>

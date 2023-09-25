@@ -1,0 +1,26 @@
+﻿@page "/markdownplans"
+@page "/markdownplans/{Id}"
+
+<PageTitle>Markdown Plans</PageTitle>
+
+<h1>Markdown Plans</h1>
+
+<p>Please select a markdown plan below.</p>
+
+@if (ViewModel == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <button
+        type="button"
+        class="btn btn-primary"
+        @onclick="AddMarkdownPlan">
+        Add Markdown Plan
+    </button>
+
+    <MarkdownPlansListComponent MarkdownPlanList="ViewModel"></MarkdownPlansListComponent>
+}
