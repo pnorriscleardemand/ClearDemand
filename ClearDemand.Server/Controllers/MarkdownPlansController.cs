@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using ClearDemand.Business.Contracts;
-using ClearDemand.Models.EntityFrameworkModels;
+using ClearDemand.Models.EntityFramework;
 using ClearDemand.Shared.ApiModels;
 using Microsoft.AspNetCore.Mvc;
 

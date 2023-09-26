@@ -2,7 +2,7 @@
 using ClearDemand.Client.Converters;
 using ClearDemand.Client.ViewModels;
 using ClearDemand.Models.Business;
-using ClearDemand.Models.EntityFrameworkModels;
+using ClearDemand.Models.EntityFramework;
 using ClearDemand.Shared.ApiModels;
 
 namespace ClearDemand.Server;

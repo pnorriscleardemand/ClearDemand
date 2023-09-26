@@ -1,4 +1,4 @@
-﻿namespace ClearDemand.Models.EntityFrameworkModels;
+﻿namespace ClearDemand.Models.EntityFramework;
 
 public class Markdown
 {

@@ -23,4 +23,9 @@
     <ProjectReference Include="..\ClearDemand.Models\ClearDemand.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="EntityFramework\" />
+    <Folder Include="Cosmos\" />
+  </ItemGroup>
+
 </Project>
