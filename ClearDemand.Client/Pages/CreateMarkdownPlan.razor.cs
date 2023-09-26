@@ -17,7 +17,7 @@ public partial class CreateMarkdownPlan
 
     [Parameter] public string? Id { get; set; }
 
-    protected override async Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
         ViewModel = new MarkdownPlanDetailViewModel();
 

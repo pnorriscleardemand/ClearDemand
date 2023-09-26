@@ -8,7 +8,6 @@ namespace ClearDemand.Client.Pages;
 
 public partial class CreateSale
 {
-    private int currentCount = 0;
     protected List<ProductViewModel>? ProductsViewModel;
 
 
