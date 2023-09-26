@@ -1,7 +1,7 @@
 ﻿using ClearDemand.Models.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 
-namespace ClearDemand.Data;
+namespace ClearDemand.Data.EntityFramework;
 
 public partial class ClearDemandContext : DbContext
 {

@@ -24,7 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="EntityFramework\" />
     <Folder Include="Cosmos\" />
   </ItemGroup>
 

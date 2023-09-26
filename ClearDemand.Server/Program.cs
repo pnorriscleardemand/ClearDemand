@@ -1,4 +1,4 @@
-using ClearDemand.Data;
+using ClearDemand.Data.EntityFramework;
 using ClearDemand.Server;
 using ClearDemand.Server.Extensions;
 using Microsoft.EntityFrameworkCore;

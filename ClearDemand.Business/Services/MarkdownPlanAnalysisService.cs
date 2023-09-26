@@ -1,5 +1,5 @@
 ﻿using ClearDemand.Business.Contracts;
-using ClearDemand.Data;
+using ClearDemand.Data.EntityFramework;
 using ClearDemand.Models.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 
