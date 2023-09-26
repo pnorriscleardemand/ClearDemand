@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using ClearDemand.Client.Contracts;
 using ClearDemand.Client.ViewModel;
-using ClearDemand.Shared.Models.ApiModel;
+using ClearDemand.Shared.ApiModel;
 using Microsoft.AspNetCore.Components;
 
 namespace ClearDemand.Client.Pages;

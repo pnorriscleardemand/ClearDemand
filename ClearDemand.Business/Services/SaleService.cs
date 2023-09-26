@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using ClearDemand.Business.Contracts;
 using ClearDemand.Data;
-using ClearDemand.Shared.Models.EntityFrameworkModels;
+using ClearDemand.Models.EntityFrameworkModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 

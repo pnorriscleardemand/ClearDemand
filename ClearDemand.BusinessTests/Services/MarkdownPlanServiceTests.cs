@@ -1,12 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ClearDemand.Business.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ClearDemand.Business.Services.Tests
+namespace ClearDemand.Business.Tests.Services
 {
     [TestClass()]
     public class MarkdownPlanServiceTests

@@ -1,4 +1,4 @@
-﻿using ClearDemand.Shared.Models.EntityFrameworkModels;
+﻿using ClearDemand.Models.EntityFrameworkModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace ClearDemand.Data;

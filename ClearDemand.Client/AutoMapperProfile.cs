@@ -1,8 +1,7 @@
 ﻿using AutoMapper;
 using ClearDemand.Client.Converters;
 using ClearDemand.Client.ViewModel;
-using ClearDemand.Shared.Models.ApiModel;
-using ClearDemand.Shared.Models.Business;
+using ClearDemand.Shared.ApiModel;
 
 namespace ClearDemand.Client;
 
@@ -45,7 +44,7 @@ public class MappingProfile : Profile
         CreateMap<SaleApiModel, SaleViewModel>();
         CreateMap<SaleApiModel, SaleViewModel>().ReverseMap();
 
-        CreateMap<DailySalesAnalysisApiModel, DailySalesAnalysis>();
-        CreateMap<DailySalesAnalysisApiModel, DailySalesAnalysis>().ReverseMap();
+        CreateMap<DailySalesAnalysisApiModel, DailySalesAnalysisViewModel>();
+        CreateMap<DailySalesAnalysisApiModel, DailySalesAnalysisViewModel>().ReverseMap();
     }
 }

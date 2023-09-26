@@ -1,6 +1,4 @@
-﻿using ClearDemand.Shared.Models.EntityFrameworkModels;
-
-namespace ClearDemand.Shared.Models.ApiModel;
+﻿namespace ClearDemand.Shared.ApiModel;
 
 public class MarkdownPlanDetailApiModel
 {
@@ -18,7 +16,7 @@ public class MarkdownPlanDetailApiModel
 
     public string? PlanDescription { get; set; }
 
-    public virtual Product? Product { get; set; }
+    public virtual ProductApiModel? Product { get; set; }
 
     public virtual ICollection<MarkdownApiModel> Markdowns { get; set; } = new List<MarkdownApiModel>();
 }

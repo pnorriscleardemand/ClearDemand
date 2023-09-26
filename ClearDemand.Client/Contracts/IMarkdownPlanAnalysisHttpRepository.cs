@@ -1,4 +1,4 @@
-﻿using ClearDemand.Shared.Models.ApiModel;
+﻿using ClearDemand.Shared.ApiModel;
 
 namespace ClearDemand.Client.Contracts;
 

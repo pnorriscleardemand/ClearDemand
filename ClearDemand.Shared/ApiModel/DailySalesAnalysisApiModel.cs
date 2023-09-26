@@ -1,4 +1,4 @@
-﻿namespace ClearDemand.Shared.Models.ApiModel;
+﻿namespace ClearDemand.Shared.ApiModel;
 
 public class DailySalesAnalysisApiModel
 {

@@ -1,4 +1,4 @@
-﻿using ClearDemand.Shared.Models.EntityFrameworkModels;
+﻿using ClearDemand.Models.EntityFrameworkModels;
 
 namespace ClearDemand.Business.Contracts;
 

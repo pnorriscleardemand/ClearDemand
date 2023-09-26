@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClearDemand.Data\ClearDemand.Data.csproj" />
-    <ProjectReference Include="..\ClearDemand.Models\ClearDemand.Shared.Models.csproj" />
+    <ProjectReference Include="..\ClearDemand.Models\ClearDemand.Models.csproj" />
   </ItemGroup>
 
 </Project>

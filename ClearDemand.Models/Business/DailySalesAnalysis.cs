@@ -1,4 +1,4 @@
-﻿namespace ClearDemand.Shared.Models.Business;
+﻿namespace ClearDemand.Models.Business;
 
 public class DailySalesAnalysis
 {

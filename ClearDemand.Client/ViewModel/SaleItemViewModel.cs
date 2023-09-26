@@ -1,4 +1,4 @@
-﻿using ClearDemand.Shared.Models.EntityFrameworkModels;
+﻿
 
 namespace ClearDemand.Client.ViewModel;
 
@@ -16,7 +16,7 @@ public class SaleItemViewModel
 
     public decimal? Subtotal { get; set; }
 
-    public virtual Product? Product { get; set; }
+    public virtual ProductViewModel? Product { get; set; }
 
-    public virtual Sale? Sale { get; set; }
+    public virtual SaleViewModel? Sale { get; set; }
 }

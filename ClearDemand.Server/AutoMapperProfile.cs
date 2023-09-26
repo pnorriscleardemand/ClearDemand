@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using ClearDemand.Client.Converters;
 using ClearDemand.Client.ViewModel;
-using ClearDemand.Shared.Models.ApiModel;
-using ClearDemand.Shared.Models.Business;
-using ClearDemand.Shared.Models.EntityFrameworkModels;
+using ClearDemand.Models.Business;
+using ClearDemand.Models.EntityFrameworkModels;
+using ClearDemand.Shared.ApiModel;
 
 namespace ClearDemand.Server;
 

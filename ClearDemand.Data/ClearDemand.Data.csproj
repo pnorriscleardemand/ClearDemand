@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClearDemand.Models\ClearDemand.Shared.Models.csproj" />
+    <ProjectReference Include="..\ClearDemand.Models\ClearDemand.Models.csproj" />
   </ItemGroup>
 
 </Project>

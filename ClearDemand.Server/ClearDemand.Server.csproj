@@ -30,7 +30,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ClearDemand.Business\ClearDemand.Business.csproj" />
     <ProjectReference Include="..\ClearDemand.Client\ClearDemand.Client.csproj" />
-    <ProjectReference Include="..\ClearDemand.Models\ClearDemand.Shared.Models.csproj" />
+    <ProjectReference Include="..\ClearDemand.Models\ClearDemand.Models.csproj" />
   </ItemGroup>
 
 

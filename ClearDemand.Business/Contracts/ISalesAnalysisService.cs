@@ -1,4 +1,4 @@
-﻿using ClearDemand.Shared.Models.Business;
+﻿using ClearDemand.Models.Business;
 
 namespace ClearDemand.Business.Contracts;
 

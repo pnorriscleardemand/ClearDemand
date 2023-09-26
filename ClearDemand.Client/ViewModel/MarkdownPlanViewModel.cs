@@ -1,5 +1,5 @@
-﻿using ClearDemand.Shared.Models.ApiModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using ClearDemand.Shared.ApiModel;
 
 namespace ClearDemand.Client.ViewModel;
 

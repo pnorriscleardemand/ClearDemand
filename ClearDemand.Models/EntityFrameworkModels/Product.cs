@@ -1,4 +1,4 @@
-﻿namespace ClearDemand.Shared.Models.EntityFrameworkModels;
+﻿namespace ClearDemand.Models.EntityFrameworkModels;
 
 public class Product
 {

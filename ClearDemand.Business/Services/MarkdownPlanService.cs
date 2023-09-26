@@ -1,6 +1,6 @@
 ﻿using ClearDemand.Business.Contracts;
 using ClearDemand.Data;
-using ClearDemand.Shared.Models.EntityFrameworkModels;
+using ClearDemand.Models.EntityFrameworkModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace ClearDemand.Business.Services;
