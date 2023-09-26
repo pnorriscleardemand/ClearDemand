@@ -1,4 +1,4 @@
-﻿namespace ClearDemand.Shared.ApiModel;
+﻿namespace ClearDemand.Shared.ApiModels;
 
 public class MarkdownPlanDetailApiModel
 {

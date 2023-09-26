@@ -1,4 +1,4 @@
-﻿using ClearDemand.Client.ViewModel;
+﻿using ClearDemand.Client.ViewModels;
 using Microsoft.AspNetCore.Components;
 
 namespace ClearDemand.Client.Components;

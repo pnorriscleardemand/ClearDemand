@@ -1,4 +1,4 @@
-﻿namespace ClearDemand.Client.ViewModel;
+﻿namespace ClearDemand.Client.ViewModels;
 
 public class InventoryViewModel
 {

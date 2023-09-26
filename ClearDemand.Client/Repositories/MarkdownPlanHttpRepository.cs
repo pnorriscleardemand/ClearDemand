@@ -2,7 +2,7 @@
 using System.Text;
 using System.Text.Json;
 using ClearDemand.Client.Contracts;
-using ClearDemand.Shared.ApiModel;
+using ClearDemand.Shared.ApiModels;
 using Newtonsoft.Json;
 
 namespace ClearDemand.Client.Repositories;

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using ClearDemand.Shared.ApiModel;
+using ClearDemand.Shared.ApiModels;
 
-namespace ClearDemand.Client.ViewModel;
+namespace ClearDemand.Client.ViewModels;
 
 public class MarkdownPlanViewModel
 {

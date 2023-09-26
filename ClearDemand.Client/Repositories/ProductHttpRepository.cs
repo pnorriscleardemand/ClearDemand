@@ -1,7 +1,7 @@
 ﻿using System.Net.Http.Json;
 using System.Text.Json;
 using ClearDemand.Client.Contracts;
-using ClearDemand.Shared.ApiModel;
+using ClearDemand.Shared.ApiModels;
 
 namespace ClearDemand.Client.Repositories;
 

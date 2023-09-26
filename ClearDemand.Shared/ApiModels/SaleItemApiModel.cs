@@ -1,8 +1,6 @@
-﻿
+﻿namespace ClearDemand.Shared.ApiModels;
 
-namespace ClearDemand.Client.ViewModel;
-
-public class SaleItemViewModel
+public class SaleItemApiModel
 {
     public int SaleItemId { get; set; }
 
@@ -16,7 +14,7 @@ public class SaleItemViewModel
 
     public decimal? Subtotal { get; set; }
 
-    public virtual ProductViewModel? Product { get; set; }
+    public virtual ProductApiModel? Product { get; set; }
 
-    public virtual SaleViewModel? Sale { get; set; }
+    public virtual SaleApiModel? Sale { get; set; }
 }

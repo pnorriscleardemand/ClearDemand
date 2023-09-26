@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using ClearDemand.Business.Contracts;
-using ClearDemand.Shared.ApiModel;
+using ClearDemand.Shared.ApiModels;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
